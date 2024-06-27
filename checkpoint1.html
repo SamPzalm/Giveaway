@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css" media="all">
+      body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#continueButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#continueButton:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: orangered">Checkpoint 1</h1>
+        <p>You're almost there! Click the button below to continue.</p>
+        <button id="continueButton">Continue</button>
+    </div>
+
+    <script>
+        document.getElementById('continueButton').addEventListener('click', function() {
+            // Redirect to the Linkvertise link
+            window.location.href = 'checkpoint2.html';
+
+            // Redirect to the final page after a delay (e.g., 5 seconds)
+            setTimeout(function() {
+                window.location.href = 'final.html';
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+</body>
+</html>
